@@ -76,7 +76,7 @@ body{
 /*Article*/
 .articleBox{
     display: flex;
-    width: 30%;
+    width: 20%;
     flex-direction: column;
     border:0.2rem solid rgb(36, 36, 36); 
     height: 100%;
@@ -120,7 +120,7 @@ body{
     border:0.2em solid rgb(66, 65, 65);
     text-overflow: ellipsis;
     overflow: hidden;
-    flex:1 0 auto;
+    flex:1 1 auto;
     
 }
 
@@ -131,9 +131,7 @@ body{
     background-color: rgb(236, 226, 226);
     max-width: 100%;
     display: flex;
-    flex-wrap: wrap;
 }
-
 
 .questions{
     display: flex;
