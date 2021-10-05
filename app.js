@@ -24,9 +24,7 @@ category.addEventListener('change', function() {
     }
 });
 
-const like=document.getElementById('star');
-like.addEventListener('click',function(){
-});
+
 
 
 
