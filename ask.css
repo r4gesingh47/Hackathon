@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap');
+/*Variables*/
+:root {
+    --main-bg-color:#FCECDD;
+    --div-bg-color:#FFC288;
+    --div-elements-color:#FEA82F;
+    --navbar-bg-color:#FF6701;
+  }
+  
 *{
     box-sizing:border-box; 
     margin:0;
@@ -8,6 +17,7 @@
 }
 li{
     list-style: none;
+    font-weight: bold;
 }
 a{
     text-decoration: none;
@@ -15,7 +25,7 @@ a{
 }
 
 body{
-    background: white;
+   background: var(--main-bg-color);
 }
 
 .homePage{
@@ -30,10 +40,11 @@ body{
     display: flex;
     flex-direction: row;
     width: 100%;
-    height:8%;
     border-radius: 11px;
+    align-items: center;
     justify-content: space-between;
-    background: linear-gradient(5deg, #ffffff, #ffd9cb, #ffb299, #ff8969, #ff5b3a, #ff0000);
+    /* background: linear-gradient(5deg, #ffffff, #ffd9cb, #ffb299, #ff8969, #ff5b3a, #ff0000); */
+    background: var(--navbar-bg-color);
     -webkit-box-shadow: 0px 7px 30px 0px rgba(255, 255, 255, 0.77);
     -moz-box-shadow:    0px 7px 30px 0px rgba(253, 253, 253, 0.77);
     box-shadow:         0px 7px 30px 0px rgba(241, 255, 255, 0.77);
@@ -80,13 +91,12 @@ input[type=text], textarea {
   border: none;  
   background: #f1f1f1;  
 }  
+
+
 input[type=text]:focus, textarea:focus {  
   background-color: orange;  
   outline: none;  
 }  
- div {  
-            padding: 10px 0;  
-         }  
 .line {  
   border: 1px solid #f1f1f1;  
   margin-bottom: 25px;  
