@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="resp_text.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,22 +12,63 @@
     <section class="homePage">
         <div class="navbar">
             <div class="logo">
-                <img src="../logo.png" alt="">
+                <img src="" alt="">
             </div>
             <div class="menus">
                
                     <li><a href="index.html">Home</a></li>
                     <li><a href="articles/article.html">Articles</a></li>
-                    <li><a href="ask.html">Ask a question</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Ask a question</a></li>
+                    <li><a href="#">About</a></li>
                 
             </div>
             <div class="profile">
-                <p>Login</p>
+                <a href="login.html"><p>Login</p></a>
             </div>
-            </div>
+        </div>
         <div class="main">
+          
+ 
+  
+        <form class="fo">   
+            <div class="container">  
+                <center>  <h1> Ask a Question </h1> </center>  
+                <hr class="line">  
+                <label> Full Name </label>   
+                <input type="text" name="name" placeholder= "Name" size="15" required />   
+                
+                <div>  
+                    <label for="cars">Category</label>
+                    <select name="choose" id="choose-category">
+                    <option value="mental">Mental Illness</option>
+                    <option value="surgery">Surgery</option>
+                    <option value="cancer">Cancer</option>
+                    <option value="blood">Blood</option>
+                    <option value="cardiovascular">Cardiovascular</option>
+                    <option value="ear">Ear</option>
+                    <option value="eye">Eye</option>
+                    <option value="infection">Infection</option>
+                    <option value="congetical">Congenital Disorder </option>
+                    <option value="skin">skin</option>
+                    <option value="stroke">stroke</option> 
+                    <option value="immune">Inflammatory and Immune system</option>
+                    <option value="metabolic">Metabolic and Endocrine</option>
+                    <option value="all">All</option>
+                    </select>
+                </div>  
+            <div>  
+                
+            Title :  
+            <textarea cols="80" rows="2" placeholder="Title of the Question" value="title" required>  
+            </textarea>  
+            Question :  
+            <textarea cols="80" rows="5" placeholder="Content of the Question" value="question" required>  
+            </textarea> 
             
+            <button type="submit" class="submitbtn">Submit</button>    
+        </form>  
+  
+
         </div>
     </section>
 <script src="app.js"></script>
